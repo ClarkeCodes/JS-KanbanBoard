@@ -19,9 +19,8 @@ const create_item = () => {
   // Create new item div and set attributes
   let item = document.createElement('div');
   item.classList.add('item');
-  item.setAttribute('id', 'item-' + order);
-  // item.id = "item-" + order;
-  item.setAttribute('draggable', true);
+  item.id = "item-" + order;
+  item.setAttribute('draggable', 'true');
 
   // Add event listeners for dragstart and end
   item.addEventListener('dragstart', (event) => {
